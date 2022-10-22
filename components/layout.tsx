@@ -6,9 +6,10 @@ import styles from './layout.module.css'
 interface LayoutParam {
   children: any
   home?: boolean
+  seoTitle?: string
 }
 
-export default function Layout({ children, home }: LayoutParam) {
+export default function Layout({ children, home, seoTitle }: LayoutParam) {
   const [theme, setTheme] = useState(() =>
     typeof window !== 'undefined'
       ? localStorage.getItem('theme') === 'dark'
@@ -35,7 +36,7 @@ export default function Layout({ children, home }: LayoutParam) {
     }
   }
 
-  console.log('home : ', home)
+  console.log('seoTitle : ', seoTitle)
   return (
     <div className="bg-lime-50 dark:bg-zinc-700 dark:text-white h-screen">
       <div className={styles.container}>
@@ -45,6 +46,7 @@ export default function Layout({ children, home }: LayoutParam) {
             content="width=device-width, initial-scale=1.0"
           />
           <link rel="icon" href="/favicon.ico" />
+          <title>{seoTitle === undefined ? 'skykec4 Blog' : seoTitle}</title>
         </Head>
         <header className={styles.header}>
           {home ? (
