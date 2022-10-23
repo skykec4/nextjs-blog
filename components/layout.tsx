@@ -35,8 +35,6 @@ export default function Layout({ children, home, seoTitle }: LayoutParam) {
       setTheme('dark')
     }
   }
-
-  console.log('seoTitle : ', seoTitle)
   return (
     <div className="bg-lime-50 dark:bg-zinc-700 dark:text-white h-screen">
       <div className={styles.container}>
@@ -61,7 +59,10 @@ export default function Layout({ children, home, seoTitle }: LayoutParam) {
             ''
           )}
         </header>
-
+        <p className="font-bold text-4xl">skykec4 Blog</p>
+        <br />
+        <hr />
+        <br />
         <main>{children}</main>
         <footer>
           {home ? (
