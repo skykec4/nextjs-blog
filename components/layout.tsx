@@ -46,9 +46,11 @@ export default function Layout({ children, home, seoTitle }: LayoutParam) {
           <link rel="icon" href="/favicon.ico" />
           <title>{seoTitle === undefined ? 'skykec4 Blog' : seoTitle}</title>
         </Head>
-        <header className={styles.header}>
+        <header className={`flex flex-row justify-between`}>
+          {/* <header className={`${styles.header} flex flex-row`}> */}
+          <p className="font-bold text-4xl">skykec4 Blog</p>
           {home ? (
-            <button className="w-10" onClick={handleTheme}>
+            <button className="w-8" onClick={handleTheme}>
               {theme === 'dark' ? (
                 <img src="/light-mode.svg"></img>
               ) : (
@@ -59,7 +61,7 @@ export default function Layout({ children, home, seoTitle }: LayoutParam) {
             ''
           )}
         </header>
-        <p className="font-bold text-4xl">skykec4 Blog</p>
+
         <br />
         <hr />
         <br />
