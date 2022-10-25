@@ -52,9 +52,9 @@ export default function Layout({ children, home, seoTitle }: LayoutParam) {
           {home ? (
             <button className="w-8" onClick={handleTheme}>
               {theme === 'dark' ? (
-                <img src="/light-mode.svg"></img>
+                <img src="/light-mode.svg" alt="light-mode-img"></img>
               ) : (
-                <img src="/dark-mode.svg"></img>
+                <img src="/dark-mode.svg" alt="dark-mode-img"></img>
               )}
             </button>
           ) : (
