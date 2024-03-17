@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'iceJaram-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KCC-DodamdodamR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-DodamdodamR.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.btn-close::after {
+  top: 20px;
+  left: 28px;
+  position: absolute;
+  width: 1.5px;
+  height: 20px;
+  content: ' ';
+  transform: rotate(-45deg);
+  background-color: white;
+}
+.btn-close::before {
+  top: 20px;
+  left: 28px;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 1.5px;
+  height: 20px;
+  content: ' ';
+  background-color: white;
+}

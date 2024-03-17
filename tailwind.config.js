@@ -6,7 +6,12 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        jr: 'iceJaram-Rg',
+        dodam: 'KCC-DodamdodamR',
+      },
+    },
   },
   plugins: [],
 }
