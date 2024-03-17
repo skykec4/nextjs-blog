@@ -21,10 +21,18 @@ const index = () => {
     <>
       <div className="flex flex-col justify-center items-center max-w-[360px] mx-auto">
         <div className="w-[170px] h-[77px] relative mb-6">
-          <Image src={'/images/intro-birthday.png'} layout="fill" />
+          <Image
+            src={'/images/intro-birthday.png'}
+            layout="fill"
+            alt={'intro-image1'}
+          />
         </div>
         <div className="relative w-[250px] h-auto aspect-square rounded-full overflow-hidden mb-6">
-          <Image src={'/images/chaea/1.jpeg'} layout="fill" />
+          <Image
+            src={'/images/chaea/1.jpeg'}
+            layout="fill"
+            alt={'intro-image2'}
+          />
         </div>
         <span className="font-jr text-[1.56rem] text-[#FFABBF] flex relative justify-center items-center gap-2 mb-6">
           <strong className="text-black text-[2.25rem]">김채아</strong> 처음생일

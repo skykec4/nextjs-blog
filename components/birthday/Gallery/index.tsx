@@ -93,6 +93,7 @@ const ImageBox = ({ row, col, className }: IImageBox) => {
         className="object-cover"
         src={'/images/chaea/1.jpeg'}
         layout="fill"
+        alt={'main-image'}
       />
     </div>
   )
