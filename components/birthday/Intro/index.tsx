@@ -27,7 +27,7 @@ const index = () => {
             alt={'intro-image1'}
           />
         </div>
-        <div className="relative w-[300px] h-auto aspect-[7/10] rounded-[20px] border overflow-hidden mb-6">
+        <div className="relative w-[300px] h-auto aspect-[7/10] rounded-[10px] border overflow-hidden mb-6">
           <Image
             src={'/images/chaea/1.jpg'}
             layout="fill"

@@ -49,10 +49,7 @@ export default function BirthdayLayout({
           />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="김채아의 생일" />
-          <meta
-            property="og:image"
-            content="/nextjs-blog/public/images/chaea/1.jpg"
-          />
+          <meta property="og:image" content="/images/chaea/1.jpg" />
           <meta property="og:description" content="김채아의 생일입니다." />
           <link rel="icon" href="/favicon.ico" />
           <link
