@@ -27,11 +27,11 @@ const index = () => {
             alt={'intro-image1'}
           />
         </div>
-        <div className="relative w-[250px] h-auto aspect-square rounded-full overflow-hidden mb-6">
+        <div className="relative w-[300px] h-auto aspect-[7/10] rounded-[20px] border overflow-hidden mb-6">
           <Image
-            src={'/images/chaea/1.jpeg'}
+            src={'/images/chaea/1.jpg'}
             layout="fill"
-            alt={'intro-image2'}
+            alt={'intro-image'}
           />
         </div>
         <span className="font-jr text-[1.56rem] text-[#FFABBF] flex relative justify-center items-center gap-2 mb-6">

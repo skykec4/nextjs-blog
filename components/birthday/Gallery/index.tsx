@@ -15,43 +15,59 @@ export default function index() {
           height: rowCounct * 80,
         }}
       >
-        <ImageBox className="row-[span_3_/_span_3] col-[span_2_/_span_3] row-start-1 col-start-3" />
-        <ImageBox className="row-[span_3_/_span_3] col-[span_3_/_span_2] row-start-1 col-start-1" />
+        <ImageBox
+          imageName={3}
+          className="row-[span_3_/_span_3] col-[span_2_/_span_3] row-start-1 col-start-3"
+        />
+        <ImageBox
+          imageName={1}
+          className="row-[span_3_/_span_3] col-[span_3_/_span_2] row-start-1 col-start-1"
+        />
 
-        <ImageBox className="row-[span_6_/_span_6] col-[span_3_/_span_2] row-start-4 col-start-4" />
-        <ImageBox className="row-[span_3_/_span_3] col-[span_2_/_span_3] row-start-4 col-start-1" />
+        <ImageBox
+          imageName={11}
+          className="row-[span_6_/_span_3] col-[span_3_/_span_2] row-start-4 col-start-4"
+        />
+        <ImageBox
+          imageName={2}
+          className="row-[span_3_/_span_3] col-[span_2_/_span_3] row-start-4 col-start-1"
+        />
 
-        <ImageBox className="row-[span_6_/_span_6] col-[span_2_/_span_2] row-start-7 col-start-1" />
-        <ImageBox className="row-[span_3_/_span_3] col-[span_1_/_span_1] row-start-7 col-start-3" />
+        {/* <ImageBox
+          imageName={5}
+          className="row-[span_6_/_span_6] col-[span_2_/_span_2] row-start-7 col-start-1"
+        /> */}
+
+        {/* <ImageBox
+          imageName={6}
+          className="row-[span_3_/_span_3] col-[span_1_/_span_1] row-start-7 col-start-3"
+        /> */}
         {/* <ImageBox className="row-[span_3_/_span_3] col-[span_2_/_span_2] row-start-5 col-start-4" /> */}
 
         {/* <ImageBox className="row-[span_2_/_span_2] col-[span_3_/_span_2] row-start-8 col-start-1" /> */}
-        <ImageBox className="row-[span_3_/_span_3] col-[span_2_/_span_3] row-start-9 col-start-3" />
-
-        <ImageBox className="row-[span_3_/_span_3] col-[span_2_/_span_3] row-start-13 col-start-1" />
-        <ImageBox className="row-[span_3_/_span_3] col-[span_3_/_span_2] row-start-13 col-start-4" />
-
-        <ImageBox className="row-[span_3_/_span_3] col-[span_3_/_span_2] row-start-16 col-start-1" />
-        <ImageBox className="row-[span_3_/_span_3] col-[span_3_/_span_3] row-start-16 col-start-3" />
         {/* <ImageBox
-          className="row-[span_2_/_span_2] row-start-5 col-start-1"
-          col={2}
+          imageName={7}
+          className="row-[span_3_/_span_3] col-[span_2_/_span_3] row-start-10 col-start-3"
         /> */}
+
         {/* <ImageBox
-          className="row-[span_2_/_span_2] row-start-8 col-start-1"
-          col={2}
+          imageName={4}
+          className="row-[span_3_/_span_3] col-[span_2_/_span_3] row-start-10 col-start-1"
+        />
+        <ImageBox
+          imageName={9}
+          className="row-[span_3_/_span_3] col-[span_3_/_span_2] row-start-10 col-start-4"
         /> */}
-        {/* <ImageBox className="row-[span_3_/_span_4] row-start-5" col={2} /> */}
-        {/* <ImageBox className="row-[span_2_/_span_2]" col={2} /> */}
-        {/* <ImageBox className="row-[span_4_/_span_4]" col={2} /> */}
-        {/* <ImageBox className="row-[span_2_/_span_2]" col={2} /> */}
-        {/* <ImageBox className="row-[span_2_/_span_2]" col={2} /> */}
-        {/* <ImageBox className="row-[span_2_/_span_2]" col={2} /> */}
-        {/* <ImageBox className="row-[span_4_/_span_4]" col={2} /> */}
-        {/* <ImageBox col={1} /> */}
-        {/* <ImageBox /> */}
-        {/* <ImageBox row={2} col={2} className="row-end-4" /> */}
-        {/* <ImageBox /> */}
+
+        <ImageBox
+          imageName={12}
+          isPng
+          className="row-[span_3_/_span_3] col-[span_3_/_span_2] row-start-16 col-start-1"
+        />
+        <ImageBox
+          imageName={8}
+          className="row-[span_3_/_span_3] col-[span_3_/_span_3] row-start-16 col-start-3"
+        />
       </div>
     </SectionLayout>
   )
@@ -60,10 +76,18 @@ export default function index() {
 interface IImageBox {
   row?: number
   col?: number
+  imageName: number
+  isPng?: boolean
   className?: string
 }
 
-const ImageBox = ({ row, col, className }: IImageBox) => {
+const ImageBox = ({
+  row,
+  col,
+  className,
+  isPng = false,
+  imageName,
+}: IImageBox) => {
   //className="row-span-3 col-span-2 bg-black
 
   // col 가로
@@ -91,7 +115,7 @@ const ImageBox = ({ row, col, className }: IImageBox) => {
     <div className={clsx(classArray, className)}>
       <Image
         className="object-cover"
-        src={'/images/chaea/1.jpeg'}
+        src={`/images/chaea/${imageName}.${isPng ? 'png' : 'jpg'}`}
         layout="fill"
         alt={'main-image'}
       />

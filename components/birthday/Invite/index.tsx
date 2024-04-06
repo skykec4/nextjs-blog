@@ -12,7 +12,7 @@ const index = () => {
       <SectionTitle src={'/images/invite.png'} />
       <p className=" leading-[36px] text-[0.9375rem] text-center text-[rgb(51,51,51)]">
         품에 보듬어 안기도 조심스러웠던 <br />
-        서윤이가 어느덧 건강하게 자라 <br />첫 생일을 맞이하게 되었습니다.
+        채아가 어느덧 건강하게 자라 <br />첫 생일을 맞이하게 되었습니다.
         <br />
         아낌없는 관심과 사랑을 보내주신 덕분에
         <br /> 이쁘고 건강하게 첫 생일을 맞이합니다.

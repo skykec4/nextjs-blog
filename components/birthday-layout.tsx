@@ -47,10 +47,13 @@ export default function BirthdayLayout({
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          <script
-            type="text/javascript"
-            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7c1a02f4ff11aa94023ad794a1468e86"
-          ></script>
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="김채아의 생일" />
+          <meta
+            property="og:image"
+            content="/nextjs-blog/public/images/chaea/1.jpg"
+          />
+          <meta property="og:description" content="김채아의 생일입니다." />
           <link rel="icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
