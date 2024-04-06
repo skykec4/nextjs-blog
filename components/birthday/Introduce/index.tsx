@@ -39,9 +39,9 @@ export default function index() {
         {/* </div> */}
         <IntroduceRow title={'나의 탄신일'} content={'2023.04.28'} />
         <IntroduceRow title={'사랑스런 태명'} content={'(홍)삼이'} />
-        <IntroduceRow title={'좋아하는 것'} content={'맘마'} />
-        <IntroduceRow title={'위대한 특기'} content={'맘마 먹기'} />
-        <IntroduceRow title={'하고싶은 말'} content={'맘마 더 주세요!'} />
+        <IntroduceRow title={'좋아하는 것'} content={'다리미 자동차'} />
+        <IntroduceRow title={'위대한 특기'} content={'으라차찻! 일어서기'} />
+        <IntroduceRow title={'하고싶은 말'} content={'맘마 좀 더 주세요!'} />
         <IntroduceRow title={'비장의 무기'} content={'귀여움'} />
       </div>
     </SectionLayout>
